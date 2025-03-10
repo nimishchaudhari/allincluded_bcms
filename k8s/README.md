@@ -48,7 +48,7 @@ This script applies the manifests automatically.
 
 ## Notes
 
-- **LoadBalancer Services**: All services are now exposed as LoadBalancer services. It might take some time for the cloud provider to provision external IPs.
+- **NodePort Services**: All services are now exposed as NodePort services. You can access them via the node's IP address and the specified nodePort.
 - **Persistent Storage**: The YAML defines PersistentVolumeClaims. You may need to configure your storage class or adjust sizes based on your requirements.
 - **HostPath Volumes**: Some services (like OpenHands and Watchtower) use hostPath volumes. Make sure the paths exist on your host system and have the proper permissions.
 - **Environment Variables**: Verify that the environment variables match your production settings.

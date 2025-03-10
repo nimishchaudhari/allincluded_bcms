@@ -77,7 +77,7 @@ kind: Service
 metadata:
   name: personal-website
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: personal-website
   ports:
@@ -139,7 +139,7 @@ kind: Service
 metadata:
   name: anythingllm
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: anythingllm
   ports:
@@ -200,7 +200,7 @@ kind: Service
 metadata:
   name: code-server
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: code-server
   ports:
@@ -249,7 +249,7 @@ kind: Service
 metadata:
   name: n8n
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: n8n
   ports:
@@ -295,7 +295,7 @@ kind: Service
 metadata:
   name: open-webui
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: open-webui
   ports:
@@ -360,7 +360,7 @@ kind: Service
 metadata:
   name: openhands
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: openhands
   ports:
@@ -438,7 +438,7 @@ kind: Service
 metadata:
   name: litellm
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: litellm
   ports:
